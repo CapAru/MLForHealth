@@ -45,9 +45,7 @@ a {
 a:hover {
   color: #6eacda;
 }
-a:visited {
-  color: #6eacda;
-}
+
 
 .normal {
   font-family: "Open Sans", sans-serif;;
@@ -70,6 +68,8 @@ a:visited {
   background-color: #021526;
   color: #ffffff;
 }
+
+
 
 .response {
   color: #03346e;
