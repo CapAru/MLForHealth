@@ -21,7 +21,7 @@ mind_vectorizer = None
 try:
     try:
         nltk.data.find('tokenizers/punkt')
-    except nltk.downloader.DownloadError:
+    except LookupError:
         print("Downloading NLTK 'punkt' tokenizer...")
         nltk.download('punkt', quiet=True)
 
@@ -236,5 +236,5 @@ def predict_body():
 
 # --- Main Execution ---
 if __name__ == '__main__':
-    #app.run(host='0.0.0.0', port=5000) # Enable debug for development
+    # app.run(host='0.0.0.0', port=5000) # Enable debug for development
     serve(app, host='0.0.0.0', port=5000)
