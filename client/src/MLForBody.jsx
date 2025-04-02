@@ -4,8 +4,8 @@ import jsPDF from "jspdf";
 
 import RiskMeter from "./components/RiskMeter";
 
-const API_BASE_URL = "http://localhost:5000";
-
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
+console.log("API_BASE_URL:", API_BASE_URL);
 const getDisplayText = (field, value) => {
   if (value === "" || value === null || value === undefined) return "N/A";
   const numericValue = String(value);
