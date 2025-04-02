@@ -6,7 +6,7 @@ import numpy as np
 import random
 import nltk
 import os
-
+from waitress import serve
 # --- Initialization ---
 app = Flask(__name__)
 CORS(app)  # Enable CORS for the entire app (allows React frontend to call)
@@ -236,4 +236,5 @@ def predict_body():
 
 # --- Main Execution ---
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000) # Enable debug for development
+    #app.run(host='0.0.0.0', port=5000) # Enable debug for development
+    serve(app, host='0.0.0.0', port=5000)
