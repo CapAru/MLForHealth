@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
-import MLForMind from "./MLForMind";
-import MLForBody from "./MLForBody";
-import MLForHealth from "./MLforHealth";
+import MLForMind from "./MLForMind.jsx";
+import MLForBody from "./MLForBody.jsx";
+import MLForHealth from "./MLforHealth.jsx";
 
 export default function App() {
   return (
