@@ -237,4 +237,4 @@ def predict_body():
 # --- Main Execution ---
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=5000) # Enable debug for development
-    serve(app, host='0.0.0.0', port=5000)
+    serve(app, host='0.0.0.0', port=8080)
