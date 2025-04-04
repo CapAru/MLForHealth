@@ -52,6 +52,15 @@ export default function App() {
                                   ML <span>for</span> Body
                               </Link>
                           </li>
+                          <li className="nav-item">
+                              <Link
+                                  className="nav-link"
+                                  to="/body"
+                                  style={{ color: "#E2E2B6" }}
+                              >
+                                  🫀
+                              </Link>
+                          </li>
                       </ul>
                   </div>
               </div>
