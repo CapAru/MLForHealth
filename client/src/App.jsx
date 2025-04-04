@@ -46,7 +46,7 @@ export default function App() {
                           <li className="nav-item">
                               <Link
                                   className="nav-link"
-                                  to="https://predictheartdisease.onrender.com/"
+                                  to="/body"
                                   style={{ color: "#E2E2B6" }}
                               >
                                   ML <span>for</span> Body
